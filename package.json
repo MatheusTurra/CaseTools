@@ -1,0 +1,19 @@
+{
+  "name": "casetools",
+  "version": "1.0.0",
+  "description": "Text converter from different types of cases, binary converter and more.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatheusTurra/CaseTools.git"
+  },
+  "author": "Matheus Farisco Turra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MatheusTurra/CaseTools/issues"
+  },
+  "homepage": "https://github.com/MatheusTurra/CaseTools#readme"
+}
