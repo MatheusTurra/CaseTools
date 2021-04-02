@@ -1,7 +1,7 @@
 {
   "name": "casetools",
   "version": "1.0.0",
-  "description": "Text converter from different types of cases, binary converter and more.",
+  "description": "Text converter from different types of cases, binary conversion and more.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
