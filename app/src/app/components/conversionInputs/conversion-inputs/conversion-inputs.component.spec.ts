@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MainComponent } from './main.component';
+import { ConversionInputsComponent } from './conversion-inputs.component';
 
-describe('MainComponent', () => {
-  let component: MainComponent;
-  let fixture: ComponentFixture<MainComponent>;
+describe('ConversionInputsComponent', () => {
+  let component: ConversionInputsComponent;
+  let fixture: ComponentFixture<ConversionInputsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MainComponent ]
+      declarations: [ ConversionInputsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainComponent);
+    fixture = TestBed.createComponent(ConversionInputsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
