@@ -8,17 +8,16 @@ import { ConversionInputService } from '../conversion-input.service';
   templateUrl: './conversion-inputs.component.html',
   styleUrls: ['./conversion-inputs.component.css']
 })
+
 export class ConversionInputsComponent  implements OnInit{
 
   inputText: FormControl;
 
-  constructor(private conversionService:ConversionInputService) {
-
-  }
+  constructor(private conversionService:ConversionInputService) {}
 
   ngOnInit() {
     this.inputText = new FormControl("");
-    this.sendText()
+    this.sendText();
   }
 
   sendText(): void {

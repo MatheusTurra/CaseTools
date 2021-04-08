@@ -8,6 +8,6 @@ import { HttpClient } from "@angular/common/http";
 export class ConversionInputService {
     
     send(text) {
-        console.log(text.value)
+        console.log("Console.log do service",text)
     }
 }
