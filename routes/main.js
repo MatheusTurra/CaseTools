@@ -5,8 +5,9 @@ module.exports = (app) => {
     });
 
     app.post("/", (req, res) => {
-        res.send(req.body)
-        console.log(req.body);
+        requestBody = req.body.value;
+        console.log()
+        res.send(JSON.stringify({value: requestBody.toUpperCase()}));
     });
     
     return app;
