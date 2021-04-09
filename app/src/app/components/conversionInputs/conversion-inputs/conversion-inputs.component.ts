@@ -11,17 +11,16 @@ import { ConversionInputService } from '../conversion-input.service';
 
 export class ConversionInputsComponent  implements OnInit{
 
-  inputText: FormControl;
+  inputText = new FormControl();
+  responseText: any;
 
   constructor(private conversionService:ConversionInputService) {}
 
   ngOnInit() {
-    this.inputText = new FormControl("");
-    this.sendText();
+    this.responseText = this.conversionService.getRequest();
   }
 
-  sendText(): void {
-    this.conversionService.send(this.inputText);
+  getText(text) {
+    this.conversionService.postRequest(text)
   }
-
 }

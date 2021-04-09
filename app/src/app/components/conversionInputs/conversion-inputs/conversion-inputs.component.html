@@ -1,8 +1,11 @@
 <div style="margin-top: 100px; text-align: center;">
     <form method="POST">
         <input type="text" [formControl]="inputText">
-        <button type="submit">Enviar</button>
+        <button type="submit" (click)="getText(inputText.value)">Enviar</button>
     </form>
+    <div *ngFor="let item of responseText">
+        {{item.teste}}
+    </div>
 </div>
 
 
