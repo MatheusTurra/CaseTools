@@ -2,6 +2,7 @@
     <form method="POST">
         <input type="text" [formControl]="inputText">
         <button type="submit" (click)="getText(inputText.value)">Enviar</button>
+        <span *ngFor="let item of convertedText"> {{item.value}}</span>
     </form>
     <div *ngFor="let item of responseText">
         {{item.teste}}

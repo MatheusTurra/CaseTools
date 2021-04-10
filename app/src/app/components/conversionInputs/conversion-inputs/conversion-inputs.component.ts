@@ -12,7 +12,8 @@ import { ConversionInputService } from '../conversion-input.service';
 export class ConversionInputsComponent  implements OnInit{
 
   inputText = new FormControl();
-  responseText: any;
+  responseText = new Array();
+  convertedText = new Array();
 
   constructor(private conversionService:ConversionInputService) {}
 
@@ -21,6 +22,6 @@ export class ConversionInputsComponent  implements OnInit{
   }
 
   getText(text) {
-    this.conversionService.postRequest(text)
+    this.convertedText = this.conversionService.postRequest(text)
   }
 }

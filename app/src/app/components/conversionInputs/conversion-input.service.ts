@@ -8,8 +8,9 @@ import { HttpClient } from "@angular/common/http";
 export class ConversionInputService {
     
     readonly ROOT_URL = "http://localhost:3000/";
-
-    responseData = [];
+    
+    responseData = new Array();
+    convertedText = new Array();
 
     constructor(private http: HttpClient) {}
 
@@ -17,7 +18,7 @@ export class ConversionInputService {
         this.http.get(this.ROOT_URL).toPromise().then(data => {          
             this.responseData.push(data);
         });
-
+        console.log(this.responseData, "rota get")
         return this.responseData;
     }
 
@@ -25,8 +26,12 @@ export class ConversionInputService {
         const textToJson = {
             "value": text
         }
+
+
         this.http.post(this.ROOT_URL, textToJson).toPromise().then(data => {
-            console.log(data);
+            this.convertedText.push(data);
         })
+
+          return this.convertedText;
     }
 }
