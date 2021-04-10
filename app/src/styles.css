@@ -10288,5 +10288,9 @@
       color: inherit;
       border-color: #dee2e6;
     }
+    
+  }
+  #custom-input-size {
+    height: 180px;
   }
   /*# sourceMappingURL=bootstrap.css.map */
