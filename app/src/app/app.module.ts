@@ -5,14 +5,14 @@ import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { TitleBarComponent } from './components/titleBar/title-bar.component';
-import { ConversionInputsComponent } from './components/conversionInputs/conversion-inputs/conversion-inputs.component';
 
-import { ConversionInputService } from "./components/conversionInputs/conversion-input.service"
+import { ConversionInputService } from "./services/conversion-input.service";
+import { CaseConverterComponent } from './components/case-converter/case-converter.component'
 
 @NgModule({
   declarations: [
   TitleBarComponent,
-  ConversionInputsComponent
+  CaseConverterComponent,
 ],
   imports: [
     BrowserModule,
