@@ -9,13 +9,15 @@
         
         <!-- Menu de conversão -->
         <div class="input-group input-group-lg mb-3">
-            <textarea id="custom-input-size" name="" placeholder="Digite o texto que será convertido." class="form-control mr-3 "></textarea>
-            <textarea id="outputValue" placeholder="Resultado da conversão." class="form-control"></textarea>
+            <textarea [formControl]="inputText" id="custom-input-size" name="" placeholder="Digite o texto que será convertido." class="form-control mr-3 "></textarea>
+            <!--<textarea id="outputValue" placeholder="Resultado da conversão." class="form-control"></textarea>-->
+            <span *ngIf="convertedText" id="custom-input-size" class="form-control">
+                {{convertedText.value}}
+            </span>
         </div>
-        
         <!-- Menu inferior-->
         <div class="d-flex justify-content-center mb-3">
-            <button class="btn btn-primary mr-3">
+            <button (click)="uppercaseText(inputText.value)" class="btn btn-primary mr-3">
                 Tudo Maiusculo
             </button>
             <button class="btn  btn-secondary mr-3">
@@ -25,7 +27,7 @@
                 Talvez Camel case
             </button>
             <button class="btn btn-warning justify-content-center">
-                Talvez Camel case
+                Talvez Snake case
             </button>
         </div>
     </div>

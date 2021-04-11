@@ -10,7 +10,7 @@ export class ConversionInputService {
     readonly ROOT_URL = "http://localhost:3000/";
     
     responseData = new Array();
-    convertedText = new Array();
+    convertedText;
 
     constructor(private http: HttpClient) {}
 
@@ -22,16 +22,12 @@ export class ConversionInputService {
         return this.responseData;
     }
 
-    postRequest(text){
+    convertToUppercase(text){
         const textToJson = {
             "value": text
         }
 
-
-        this.http.post(this.ROOT_URL, textToJson).toPromise().then(data => {
-            this.convertedText.push(data);
-        })
-
-          return this.convertedText;
+        return this.http.post(this.ROOT_URL + "uppercase", textToJson);
+          
     }
 }
