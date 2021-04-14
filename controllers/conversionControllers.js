@@ -55,5 +55,15 @@ module.exports = () => {
         res.send(JSON.stringify({value: alternatingCaseOutput}));
     }
 
+    controller.binaryConverter = (req, res) => {
+        let requestBody = req.body.value;
+        let binaryOutput = "";
+        
+        for (let i = 0; i < requestBody.length; i ++) {
+            binaryOutput += requestBody[i].charCodeAt(0).toString(2) + " ";
+        }
+        res.send(JSON.stringify({value: binaryOutput}));
+    }
+
     return controller;
 }

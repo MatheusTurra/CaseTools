@@ -12,5 +12,7 @@ module.exports = (app) => {
 
     app.post("/alternatingCase", controllers.alternatingCase);
 
+    app.post("/binaryConverter", controllers.binaryConverter);
+
     return app;
 }
