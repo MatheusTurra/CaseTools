@@ -7,7 +7,7 @@ module.exports = (app) => {
     });
 
     app.post("/uppercase", controllers.uppercase);
-
+    app.post("/lowercase", controllers.lowercase);
     
     return app;
 }
