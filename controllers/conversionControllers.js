@@ -41,5 +41,19 @@ module.exports = () => {
         res.send(JSON.stringify({value: snake_case_output}));
     };
 
+    controller.alternatingCase = (req, res) => {
+        let requestBody = req.body.value.toLowerCase();
+        let alternatingCaseOutput = "";
+
+        for(let i = 0; i  < requestBody.length; i++) {
+            if (i % 2 === 0) {
+                alternatingCaseOutput += requestBody[i].toLowerCase();
+            } else {
+                alternatingCaseOutput += requestBody[i].toUpperCase();
+            }
+        }
+        res.send(JSON.stringify({value: alternatingCaseOutput}));
+    }
+
     return controller;
 }

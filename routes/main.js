@@ -10,5 +10,7 @@ module.exports = (app) => {
 
     app.post("/snake_case", controllers.snake_case);
 
+    app.post("/alternatingCase", controllers.alternatingCase);
+
     return app;
 }
