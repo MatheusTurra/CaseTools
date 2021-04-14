@@ -8,5 +8,7 @@ module.exports = (app) => {
     
     app.post("/camelCase", controllers.camelCase);
 
+    app.post("/snake_case", controllers.snake_case);
+
     return app;
 }

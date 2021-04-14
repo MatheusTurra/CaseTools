@@ -1,5 +1,3 @@
-const { request } = require("express");
-
 module.exports = () => {
     let controller = {};
 
@@ -28,18 +26,20 @@ module.exports = () => {
 
 
         res.send(JSON.stringify({value: camelCaseText}))
-
-        // splittedText.map(value => {
-        //     let UppercaseWord = value[0].toUpperCase();
-        //     let captalizedArray = [];
-        //     let camelCaseText;
-        //     return captalizedArray.push(value.replace(value[0], UppercaseWord) + " ");
-
-        // }).join(" ");
-
-        // console.log(splittedText)
-
     }
+
+    controller.snake_case = (req, res) => {
+        let requestBody = req.body.value.toLowerCase();
+        let snake_case_output = "";
+        for(let i = 0; i < requestBody.length; i++) {
+            if (requestBody[i] === " ") {
+                snake_case_output += "_";
+            } else {
+                snake_case_output += requestBody[i];
+            }
+        }
+        res.send(JSON.stringify({value: snake_case_output}));
+    };
 
     return controller;
 }
