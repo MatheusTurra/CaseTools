@@ -14,20 +14,52 @@ export class ConversionInputService {
 
     constructor(private http: HttpClient) {}
 
-    getRequest(){
-        this.http.get(this.ROOT_URL).toPromise().then(data => {          
-            this.responseData.push(data);
-        });
-        console.log(this.responseData, "rota get")
-        return this.responseData;
-    }
-
-    convertToUppercase(text){
+    convertToUppercase(text) {
         const textToJson = {
             "value": text
         }
 
         return this.http.post(this.ROOT_URL + "uppercase", textToJson);
-          
     }
+
+    convertToLowercase(text) {
+        const textToJson = {
+            "value": text
+        }
+
+        return this.http.post(this.ROOT_URL + "lowercase", textToJson);
+    }
+
+    convertToCamelCase(text) {
+        const textToJson = {
+            "value": text
+        }
+
+        return this.http.post(this.ROOT_URL + "camelCase", textToJson);
+    }
+
+    convert_to_snake_case(text) {
+        const textToJson = {
+            "value": text
+        }
+
+        return this.http.post(this.ROOT_URL + "snake_case", textToJson);
+    }
+
+    convertToalternatingCase(text) {
+        const textToJson = {
+            "value": text
+        }
+
+        return this.http.post(this.ROOT_URL + "alternatingCase", textToJson);
+    }
+
+    convertToBinary(text) {
+        const textToJson = {
+            "value": text
+        }
+
+        return this.http.post(this.ROOT_URL + "binaryConverter", textToJson);
+    }
+
 }
