@@ -1,0 +1,7 @@
+#output-size {
+    word-wrap: break-word;
+    overflow: auto;
+    height: 180px;
+    border: 1px solid red;
+    height: auto;
+  }
