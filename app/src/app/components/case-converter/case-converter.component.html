@@ -6,7 +6,7 @@
                 Conversor de texto pra binario
             </button>
         </div>
-        
+
         <!-- Menu de conversão -->
         <div class="input-group input-group-lg mb-3">
             <textarea [formControl]="inputText" id="custom-input-size" name="tex" placeholder="Digite o texto que será convertido." class="form-control mr-3 "></textarea>
@@ -17,19 +17,19 @@
         <!-- Menu inferior-->
         <div class="d-flex justify-content-center mb-3">
             <button (click)="uppercaseText(inputText.value)" class="btn btn-primary mr-3">
-                Tudo Maiusculo
+                Texto todo Maiusculo
             </button>
             <button (click)="lowercaseText(inputText.value)" class="btn  btn-secondary mr-3">
-                Tudo Minúsculo
+                Texto Todo Minúsculo
             </button>
             <button (click)="alternatingCaseText(inputText.value)" class="btn btn-dark mr-3">
                 Alternating case
             </button>
             <button (click)="CamelCaseText(inputText.value)" class="btn btn-success mr-3">
-                Talvez Camel case
+                Camel case
             </button>
             <button (click)="snake_case_text(inputText.value)" class="btn btn-warning">
-                Talvez Snake case 
+                Snake case
             </button>
         </div>
     </div>
