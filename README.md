@@ -38,7 +38,7 @@ O projeto foi criado utilizando as seguintes tecnologias:
   # instalar as dependências
   $ npm install
 
-  # inicia a aplicação
-  $ npm run dev
+  # inicializa a aplicação
+  $ npm run start
 ```
 Desenvolvido por Matheus Farisco Turra 	:hurtrealbad:

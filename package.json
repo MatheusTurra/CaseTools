@@ -4,7 +4,8 @@
   "description": "Text converter from different types of cases, binary conversion and more.",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js"
+    "server": "node server.js",
+    "start": "(cd app && npm install && ng serve) & npm run server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
   },
   "homepage": "https://github.com/MatheusTurra/CaseTools#readme",
   "dependencies": {
+    "@angular/cli": "^11.2.11",
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
