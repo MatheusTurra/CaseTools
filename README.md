@@ -40,4 +40,5 @@ O projeto foi criado utilizando as seguintes tecnologias:
   # inicializa a aplicação
   $ npm run start
 ```
+--- 
 Desenvolvido por Matheus Farisco Turra 	:hurtrealbad:
