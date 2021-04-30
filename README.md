@@ -7,16 +7,14 @@ O projeto **Case Tools** é um simples conversor de diferentes tipos de texto, i
 
 ## :computer: Demonstração
 
----
 
 <h1>
+
   <img src="./demo/demonstration.gif">
 </h1>
 
-
 ## 	:bulb: Tecnologias utilizadas
 
----
 
 O projeto foi criado utilizando as seguintes tecnologias:
 
@@ -26,11 +24,12 @@ O projeto foi criado utilizando as seguintes tecnologias:
 
 ## :briefcase: Como baixar o projeto:
 
----
+
 
 ```bash
 
   # clona o repositório
+
   $ git clone https://github.com/MatheusTurra/CaseTools
 
   # entrar no diretório
@@ -41,6 +40,5 @@ O projeto foi criado utilizando as seguintes tecnologias:
 
   # inicia a aplicação
   $ npm run dev
-
 ```
 Desenvolvido por Matheus Farisco Turra 	:hurtrealbad:
