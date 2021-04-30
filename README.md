@@ -29,7 +29,6 @@ O projeto foi criado utilizando as seguintes tecnologias:
 ```bash
 
   # clona o repositório
-
   $ git clone https://github.com/MatheusTurra/CaseTools
 
   # entrar no diretório
