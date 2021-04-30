@@ -1,0 +1,36 @@
+<div class="container border">
+    <div>
+        <!-- Menu Superior -->
+        <div class=" d-flex justify-content-center">
+            <button (click)="binaryConvert(inputText.value)" class="btn btn-danger mb-3 mt-3">
+                Conversor de texto pra binario
+            </button>
+        </div>
+
+        <!-- Menu de conversão -->
+        <div class="input-group input-group-lg mb-3">
+            <textarea [formControl]="inputText" id="custom-input-size" name="tex" placeholder="Digite o texto que será convertido." class="form-control mr-3 "></textarea>
+            <div *ngIf="convertedText" id="output-size" class="form-control output">
+                <p>{{convertedText.value}}</p>
+            </div>
+        </div>
+        <!-- Menu inferior-->
+        <div class="d-flex justify-content-center mb-3">
+            <button (click)="uppercaseText(inputText.value)" class="btn btn-primary mr-3">
+                Texto todo Maiusculo
+            </button>
+            <button (click)="lowercaseText(inputText.value)" class="btn  btn-secondary mr-3">
+                Texto Todo Minúsculo
+            </button>
+            <button (click)="alternatingCaseText(inputText.value)" class="btn btn-dark mr-3">
+                Alternating case
+            </button>
+            <button (click)="CamelCaseText(inputText.value)" class="btn btn-success mr-3">
+                Camel case
+            </button>
+            <button (click)="snake_case_text(inputText.value)" class="btn btn-warning">
+                Snake case
+            </button>
+        </div>
+    </div>
+</div>

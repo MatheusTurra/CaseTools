@@ -1,10 +1,10 @@
 {
   "name": "casetools",
   "version": "1.0.0",
-  "description": "Text converter from different types of cases, binary converter and more.",
+  "description": "Text converter from different types of cases, binary conversion and more.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/MatheusTurra/CaseTools/issues"
   },
-  "homepage": "https://github.com/MatheusTurra/CaseTools#readme"
+  "homepage": "https://github.com/MatheusTurra/CaseTools#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
 }
