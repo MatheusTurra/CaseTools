@@ -1,8 +1,8 @@
 <h1 align="center">
    Case Tools
 </h1>
-</br>
-O projeto **Case Tools** é um simples conversor de diferentes tipos de texto, incluindo conversão de texto para binário, CamelCase e outros.
+<br>
+O projeto <strong> Case Tools </strong> é um simples conversor de diferentes tipos de texto, incluindo conversão de texto para binário, CamelCase e outros.
 
 ## :computer: Demonstração
 
