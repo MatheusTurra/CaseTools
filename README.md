@@ -22,7 +22,7 @@ O projeto foi criado utilizando as seguintes tecnologias:
 - [Node JS](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 
-## :briefcase: Como baixar o projeto:
+## :briefcase: Como testar o projeto:
 
 
 
