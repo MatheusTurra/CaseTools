@@ -39,8 +39,10 @@ O projeto foi criado utilizando as seguintes tecnologias:
 
   # inicializa a aplicação
   $ npm run start
+  
+  # Acesse http://localhost:4200/ no Google Chrome
 ```
 ---
 <p align="center">
-Desenvolvido por Matheus Farisco Turra 	:hurtrealbad:
+Desenvolvido por :hurtrealbad: Matheus Farisco Turra 	
 <p>
